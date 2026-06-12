@@ -1,0 +1,50 @@
+body {
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header h1 {
+    text-align: center;
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
+    font-size: 2.5rem;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.note-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    min-height: 150px;
+    border: 2px solid #00f3ff;
+    box-shadow: 0 4px 15px rgba(0, 243, 255, 0.2), 0 0 20px rgba(255, 0, 127, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 243, 255, 0.4), 0 0 25px rgba(255, 0, 127, 0.2);
+}
+
+.note-title {
+    margin-top: 0;
+    color: #ff007f;
+    font-size: 1.3rem;
+    border-bottom: 1px inline #eee;
+}
+
+.note-content {
+    color: #555;
+    line-height: 1.5;
+}

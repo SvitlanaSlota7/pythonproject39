@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої нотатки</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Notes</h1>
+    </header>
+
+    <main class="notes-container">
+        {% for note in notes %}
+            <div class="note-card">
+                <h2 class="note-title">{{ note.title }}</h2>
+                <p class="note-content">{{ note.content }}</p>
+            </div>
+        {% endfor %}
+    </main>
+
+</body>
+</html>
